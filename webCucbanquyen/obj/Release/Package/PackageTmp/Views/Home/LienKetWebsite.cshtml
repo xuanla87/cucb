@@ -1,0 +1,14 @@
+﻿@model IEnumerable<CucbanquyenModel.Models.Menu>
+@if (Model != null)
+{
+    <ul class="@ViewBag.stclass">
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@item.menuUrl" target="_blank">@item.menuName</a>
+            </li>
+        }
+    </ul>
+}
+
+
